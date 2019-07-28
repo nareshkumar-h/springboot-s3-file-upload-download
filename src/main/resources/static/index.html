@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<h3>Upload File</h3>
+<form action="users/upload" method="post" enctype="multipart/form-data">
+File : <input type="file" name="file" required />
+<br>
+<button type="submit">Submit</button>
+</form>
+
+<h3>Download File</h3>
+<form action="users/download" method="GET" >
+FileName: <input type="text" name="fileName" required /> <br/>
+<br>
+<button type="submit">Submit</button>
+</form>
+
+<h3>Delete File</h3>
+<form action="users/delete" method="POST" >
+FileName: <input type="text" name="fileName" required /> <br/>
+<br>
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>
